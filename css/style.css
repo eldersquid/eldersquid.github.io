@@ -23,9 +23,233 @@
 16) ARLO MEDIA QUERIES (FOR SMALL DEVICES)
 
 /*---------------------------------------------------*/
-/*	01) MISC EDITS
+/*	01) TESTIMONIALS
 /*---------------------------------------------------*/
+.waxon_tm_testimonials{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 150px;
+}
+.waxon_tm_testimonials .testi_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: flex;
+	align-items: center;
+	padding-top: 105px;
+}
+.waxon_tm_testimonials .testi_inner .left{
+	width: 50%;
+	padding-right: 50px;
+}
+.waxon_tm_testimonials .quote_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.waxon_tm_testimonials .quote_list ul{
+	margin: 0px;
+	list-style-type: none;
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.waxon_tm_testimonials .quote_list ul li{
+	position: absolute;
+	margin: 0px;
+	width: 100%;
+}
+.waxon_tm_testimonials .quote_list ul li .svg{
+	width: 50px;
+	height: 50px;
+	color: #000;
+	margin-bottom: 30px;
+	opacity: 0;
+}
+.waxon_tm_testimonials .quote_list ul li.active .svg{opacity: 1;}
+.waxon_tm_testimonials .quote_list ul li .text{
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s ease;
+}
+.waxon_tm_testimonials .quote_list ul li.active .text{
+	opacity: 1;
+	visibility: visible;
+}
+.waxon_tm_testimonials .details{
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+}
+.waxon_tm_testimonials .details .image{
+	width: 65px;
+	height: 65px;
+	border-radius: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.waxon_tm_testimonials .details .main{
+	position: absolute;
+	top: -4px;
+	bottom: -4px;
+	left: -4px;
+	right: -4px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 100%;
+	opacity: 0;
 
+	-webkit-transition: all 1s ease;
+	   -moz-transition: all 1s ease;
+	    -ms-transition: all 1s ease;
+	     -o-transition: all 1s ease;
+	        transition: all 1s ease;
+
+	transform: scale(1.5) translateZ(0);
+}
+.waxon_tm_testimonials .quote_list ul li.active .details .main{
+	opacity: 1;
+	transition: all 1s .3s ease;
+	transform: scale(1) translateZ(0);
+}
+.waxon_tm_testimonials .short{padding-left: 25px;}
+.waxon_tm_testimonials .short h3{
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1;
+	position: relative;
+}
+.waxon_tm_testimonials .short .author{
+	font-family: "Montserrat";
+	font-size: 18px;
+	color: #000;
+	font-weight: 600;
+	margin-bottom: 7px;
+}
+.waxon_tm_testimonials .short .job{
+	font-family: "Mulish";
+	font-size: 15px;
+	color: #333;
+	font-weight: 400;
+	display: block;
+}
+.waxon_tm_testimonials .short .author span,
+.waxon_tm_testimonials .short .job span{
+	position: relative;
+	display: block;
+	padding: 2px 0px;
+	transform: translateY(102%);
+
+	-webkit-transition: all 1s ease;
+	   -moz-transition: all 1s ease;
+	    -ms-transition: all 1s ease;
+	     -o-transition: all 1s ease;
+	        transition: all 1s ease;
+}
+.waxon_tm_testimonials .quote_list ul li.active .short .author span{
+	transform: translateY(0px);
+	transition-delay: 0.3s;
+}
+.waxon_tm_testimonials .quote_list ul li.active .short .job span{
+	transform: translateY(0px);
+	transition-delay: 0.6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.waxon_tm_testimonials .testi_inner .right{
+	width: 50%;
+	padding-left: 50px;
+}
+.waxon_tm_testimonials .testi_inner .right .image_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.waxon_tm_testimonials .testi_inner .right .image_list ul{
+	margin: 0px 0px 0px -50px;
+	list-style-type: none;
+}
+.waxon_tm_testimonials .testi_inner .right .image_list ul li{
+	margin: 0px 0px 50px 0px;
+	float: left;
+	width: 50%;
+	padding-left: 50px;
+	opacity: .5;
+	cursor: pointer;
+
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.waxon_tm_testimonials .testi_inner .right .image_list ul li.active{
+	opacity: 1;
+}
+.waxon_tm_testimonials .testi_inner .right .image_list ul li .image{
+	position: relative;
+}
+.waxon_tm_testimonials .testi_inner .right .image_list ul li .image img{
+	min-width: 100%;
+	opacity: 0;
+}
+.waxon_tm_testimonials .testi_inner .right .image_list ul li .image .main{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+}
+
+@media (max-width: 1040px) {
+	.waxon_tm_testimonials .testi_inner{flex-direction: column;align-items: baseline;}
+	.waxon_tm_testimonials .testi_inner .right{display: none;}
+	.waxon_tm_testimonials .quote_list ul{flex-direction: column;}
+	.waxon_tm_testimonials .quote_list ul li{margin-bottom: 50px;}
+	.waxon_tm_testimonials .quote_list ul li:last-child{margin-bottom: 0px;}
+	.waxon_tm_testimonials .quote_list ul li .svg{opacity: 1;margin-bottom: 15px;}
+	.waxon_tm_testimonials .quote_list ul li .text{opacity: 1;visibility: visible;}
+	.waxon_tm_testimonials .details .main{opacity: 1;transform: scale(1);}
+	.waxon_tm_testimonials .short .author span, .waxon_tm_testimonials .short .job span{transform: translateY(0);}
+	.waxon_tm_testimonials .testi_inner .left{padding-right: 0px;width: 100%;margin-bottom: 40px;}
+	.waxon_tm_testimonials .testi_inner .right .image_list ul{margin-left: -30px;}
+	.waxon_tm_testimonials .testi_inner .right .image_list ul li{padding-left: 30px;margin-bottom: 30px;}
+	.waxon_tm_testimonials .quote_list ul li{position: relative;}
+	.waxon_tm_testimonials .testi_inner{padding-top: 45px;}
+	.waxon_tm_testimonials{margin-bottom: 80px;}
+}
+
+@media (max-width: 768px) {
+	.waxon_tm_testimonials .testi_inner .right .image_list ul{margin-left: -20px;}
+	.waxon_tm_testimonials .testi_inner .right .image_list ul li{padding-left: 20px;margin-bottom:20px;}
+
+
+}
 
 
 
