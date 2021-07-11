@@ -1851,6 +1851,18 @@ body.dark .waxon_tm_partners ul.dark{display: none;}
 	background-image: url("..//img/portfolio/miyawaki.png");
 }
 
+.waxon_tm_portfolio_single .jarallax_image .image_minju {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url("..//img/portfolio/bot3.png");
+}
+
 .waxon_tm_portfolio_single .extra_info{
 	width: 100%;
 	margin-bottom: 180px;

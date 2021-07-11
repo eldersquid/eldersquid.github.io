@@ -263,7 +263,7 @@ function arlo_tm_animate_text(){
 	var animateSpan			= jQuery('.arlo_tm_animation_text_word');
 
 	animateSpan.typed({
-		strings: ["Polytechnic Student", "Full-Stack Developer", "husband of Kim Minju"],
+		strings: ["Polytechnic Student", "Full-Stack Developer", "UX Designer"],
 		loop: true,
 		startDelay: 1e3,
 		backDelay: 2e3
